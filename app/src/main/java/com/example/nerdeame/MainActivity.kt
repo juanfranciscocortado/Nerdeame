@@ -8,6 +8,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //SetUp
+        setup()
+
     }
 
     //Aqui es donde tendremos lo referente a la funcionalidad y visualizacion de nuestro menu
@@ -18,4 +22,10 @@ class MainActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
+
+    private fun setup(){
+        setupTable()
+    }
+
+    private fun setupTable(){}
 }
